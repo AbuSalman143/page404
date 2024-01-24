@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');
+/* font-family: 'Catamaran', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Catamaran', sans-serif; 
+    background-color: #F4F4F4;
+   
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid ; */
+    color: #BBBBBB;
+    width: 40%;
+   
+    
+}
+.content h1{
+    font-size: 36px;
+    margin-top: 80px;
+}
+.content p{
+    font-size: 24px;
+    /* line-height: 50px; */
+    text-align: center;
+
+}
+.content i{
+    background-color: #FFC83D;
+    border-radius: 50%;
+    color: black;
+    }
+
+.error-container{
+    /* border: 2px solid; */
+    font-size: 180px;
+    font-weight: 800;
+    position: relative;
+    padding-bottom: 200px;
+
+}  
+
+.error-container span:nth-child(1){
+    display: inline-block;
+    color: #F0E395;
+    position: relative;
+    transform-origin: center bottom;
+    background-color: transparent;
+    transform: rotateX(0);
+    animation: rotatefirst4 8s  infinite;
+
+}
+
+@keyframes rotatefirst4{
+    0% {
+        transform: rotateX(0);
+        }
+        9% {
+        transform: rotateX(210deg);
+        }
+        13% {
+        transform: rotateX(150deg);
+        }
+        16% {
+        transform: rotateX(200deg);
+        }
+        18% {
+        transform: rotateX(170deg);
+        }
+        20% {
+        transform: rotateX(180deg);
+        }
+        60% {
+        transform: rotateX(180deg);
+        }
+        80% {
+        transform: rotateX(0);
+        }
+        100% {
+        transform: rotateX(0);
+        }
+    
+}
+.error-container span:nth-child(2){
+    color: #FFB485;
+}
+.error-container span:nth-child(3){
+    color: #D15C95;
+    display: inline-block;
+    transform-origin: center bottom;
+    background-color: transparent;
+    transform: rotate(0);
+    animation: rotatelast4 8s  infinite;
+
+}
+
+@keyframes rotatelast4 {
+    0% {
+    transform: rotate(0);
+    }
+    10% {
+    transform: rotate(30deg);
+    }
+    15% {
+    transform: rotate(90deg);
+    }
+    70% {
+    transform: rotate(90deg);
+    }
+    80% {
+    transform: rotate(0);
+    }
+    100% {
+    transform: rotateX(0);
+    }
+}
+
+.backtohome{
+    border: 2px solid;
+    padding: 10px 50px;
+     background-color: #BBBBBB; 
+    color: #F4F4F4; 
+    margin-bottom: 80px;
+}
+.backtohome a{
+    color: #F4F4F4;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 24px;
+}
